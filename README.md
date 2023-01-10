@@ -4,19 +4,10 @@
 ### Author: Ian F. Shirley
 
 ### Links and Resources
-back-end server url (when applicable)
-front-end application (when applicable)
-Setup
-.env requirements (where applicable)
-i.e.
+- Find the capital of a given country:
+  https://capital-finder-weld.vercel.app/api/capital_finder?name=<country name>
+- Find the country by its capital:
+  https://capital-finder-weld.vercel.app/api/capital_finder?capital=<capital name>
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db
-How to initialize/run your application (where applicable)
-e.g. python main.py
-How to use your library (where applicable)
 
-### Tests
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+
