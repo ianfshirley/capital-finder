@@ -16,7 +16,12 @@ class handler(BaseHTTPRequestHandler):
             data = r.json()
             capital = data[0]['capital'][0]
             message = f"The capital of {dic['country']} is {capital}"
-
+        elif "capital" in dic:
+            url = "https://restcountries.com/v3.1/capital/"
+            r = requests.get(url + dic["capital"])
+            data = r.json()
+            country = data[0]['name']['common']
+            message = f"{dic['capital']} is the capital of {country}"
         else:
             message = "Country not found. Please try again."
 
